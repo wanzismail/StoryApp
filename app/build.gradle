@@ -1,0 +1,92 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
+}
+
+
+android {
+    namespace AppConfiguration.applicationId
+    compileSdk AppConfiguration.compileSdk
+
+    defaultConfig {
+        applicationId AppConfiguration.applicationId
+        minSdk AppConfiguration.minSdk
+        targetSdk AppConfiguration.targetSdk
+        versionCode AppConfiguration.versionCode
+        versionName AppConfiguration.versionName
+
+        testInstrumentationRunner AppConfiguration.testInstrumentationRunner
+
+        buildConfigField "String", "BASE_URL", "\"https://story-api.dicoding.dev/v1/\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+}
+
+dependencies {
+    // Android Component
+    implementation Dependencies.core
+    implementation Dependencies.appcompat
+    implementation Dependencies.material
+    implementation Dependencies.constraintLayout
+    implementation Dependencies.dataStore
+    implementation Dependencies.livedataKtx
+    implementation Dependencies.viewModelKtx
+    implementation Dependencies.navigationFragKtx
+    implementation Dependencies.navigationUiKtx
+    implementation Dependencies.paging
+
+    // Dependency Injection
+    implementation Dependencies.hiltAndroid
+    kapt Dependencies.hiltCompiler
+
+    // Asynchronous
+    implementation Dependencies.coroutinesCore
+    implementation Dependencies.coroutines
+
+    // Network
+    implementation Dependencies.retrofit
+    implementation Dependencies.loggingInterceptor
+    implementation Dependencies.converterGson
+
+    // Image Loader
+    implementation Dependencies.glide
+    kapt Dependencies.glideCompiler
+
+    // Location
+    implementation Dependencies.locationService
+
+    // Camera
+    implementation Dependencies.camera
+    implementation Dependencies.cameraLifecycle
+    implementation Dependencies.cameraView
+
+    // Unit Test
+    testImplementation Dependencies.jUnit
+
+    // Instrumentation Test
+    androidTestImplementation Dependencies.extJUnit
+    androidTestImplementation Dependencies.espresso
+}
