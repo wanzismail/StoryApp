@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash -->
+    <string name="welcome_user_caption">Selamat Datang</string>
+    <!-- Login & Register -->
+    <string name="login_caption">Masuk</string>
+    <string name="register_caption">Daftar</string>
+    <string name="password_caption">Kata Sandi</string>
+    <string name="name_caption">Nama</string>
+    <!-- Story -->
+    <string name="stories_caption">Cerita</string>
+    <string name="retry_caption">Coba Lagi</string>
+    <string name="post_story_desc">Posting Cerita</string>
+    <string name="photo_story_desc">Foto Cerita</string>
+    <string name="post_story_caption">Posting Cerita</string>
+    <string name="camera_caption">Kamera</string>
+    <string name="gallery_caption">Galeri</string>
+    <string name="description_caption">Deskripsi</string>
+    <string name="coordinate_string_format" formatted="true">Koordinat %s %s</string>
+    <string name="current_location_caption">Lokasi Sekarang</string>
+    <!-- Setting -->
+    <string name="logout_caption">Keluar</string>
+    <string name="language_caption">Bahasa</string>
+    <!-- Error -->
+    <string name="email_not_valid_error_caption">Email tidak sesuai</string>
+    <string name="password_error_caption">Kata sandi harus lebih panjang dari 5 karakter</string>
+    <!-- Camera -->
+    <string name="open_camera_failed_error_caption">Gagal memunculkan kamera.</string>
+    <string name="take_picture_failed_error_caption">Gagal mengambil gambar</string>
+</resources>

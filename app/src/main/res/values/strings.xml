@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name" translatable="false">StoryApp</string>
+    <!-- Splash -->
+    <string name="welcome_user_caption">Welcome User</string>
+    <!-- Login & Register -->
+    <string name="login_caption">Login</string>
+    <string name="register_caption">Register</string>
+    <string name="email_caption" translatable="false">Email</string>
+    <string name="password_caption">Password</string>
+    <string name="name_caption">Name</string>
+    <!-- Story -->
+    <string name="stories_caption">Stories</string>
+    <string name="retry_caption">Retry</string>
+    <string name="post_story_desc">Post Story</string>
+    <string name="photo_story_desc">Photo Story</string>
+    <string name="post_story_caption">Post Story</string>
+    <string name="camera_caption">Camera</string>
+    <string name="gallery_caption">Gallery</string>
+    <string name="description_caption">Description</string>
+    <string name="post_caption" translatable="false">Posting</string>
+    <string name="coordinate_string_format">Coordinate %s %s</string>
+    <string name="current_location_caption">Current Location</string>
+    <!-- Setting -->
+    <string name="logout_caption">Logout</string>
+    <string name="language_caption">Language</string>
+    <!-- Error -->
+    <string name="unknown_error_caption" translatable="false">Unknown Error</string>
+    <string name="email_not_valid_error_caption">Email not valid</string>
+    <string name="password_error_caption">Password must be longer than 5 characters</string>
+    <!-- Transition Name -->
+    <string name="transition_imageview_detail_photo" translatable="false">imageview_detail_photo</string>
+    <string name="transition_textview_detail_name" translatable="false">textview_detail_name</string>
+    <!-- Camera -->
+    <string name="open_camera_failed_error_caption">Failed open camera</string>
+    <string name="take_picture_failed_error_caption">Failed take picture</string>
+</resources>
