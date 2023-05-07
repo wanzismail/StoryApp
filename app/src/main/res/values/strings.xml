@@ -26,7 +26,7 @@
     <!-- Error -->
     <string name="unknown_error_caption" translatable="false">Unknown Error</string>
     <string name="email_not_valid_error_caption">Email not valid</string>
-    <string name="password_error_caption">Password must be longer than 5 characters</string>
+    <string name="password_error_caption">Password must have at least 8 characters</string>
     <!-- Transition Name -->
     <string name="transition_imageview_detail_photo" translatable="false">imageview_detail_photo</string>
     <string name="transition_textview_detail_name" translatable="false">textview_detail_name</string>

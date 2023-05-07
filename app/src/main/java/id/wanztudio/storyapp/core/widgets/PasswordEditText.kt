@@ -29,6 +29,6 @@ class PasswordEditText(context: Context, attributeSet: AttributeSet) :
     }
 
     companion object {
-        const val MIN_LENGTH = 6
+        const val MIN_LENGTH = 8
     }
 }

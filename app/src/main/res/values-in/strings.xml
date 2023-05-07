@@ -23,7 +23,7 @@
     <string name="language_caption">Bahasa</string>
     <!-- Error -->
     <string name="email_not_valid_error_caption">Email tidak sesuai</string>
-    <string name="password_error_caption">Kata sandi harus lebih panjang dari 5 karakter</string>
+    <string name="password_error_caption">Kata sandi minimal harus memiliki 8 karakterr</string>
     <!-- Camera -->
     <string name="open_camera_failed_error_caption">Gagal memunculkan kamera.</string>
     <string name="take_picture_failed_error_caption">Gagal mengambil gambar</string>
