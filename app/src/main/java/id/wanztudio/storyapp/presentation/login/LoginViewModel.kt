@@ -66,7 +66,7 @@ class LoginViewModel @Inject constructor(
 
     val isLoginEnabled: Flow<Boolean> = combine(_email, _password) { email, password ->
         val isEmailCorrect = email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()
-        val isPasswordCorrect = password.isNotEmpty() && password.length > 5
+        val isPasswordCorrect = password.isNotEmpty() && password.length >= 8
         return@combine isEmailCorrect and isPasswordCorrect
     }
 }

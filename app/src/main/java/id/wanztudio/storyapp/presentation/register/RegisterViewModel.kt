@@ -73,7 +73,7 @@ class RegisterViewModel @Inject constructor(
         combine(_name, _email, _password) { name, email, password ->
             val isEmailCorrect =
                 email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()
-            val isPasswordCorrect = password.isNotEmpty() && password.length > 5
+            val isPasswordCorrect = password.isNotEmpty() && password.length >= 8
             return@combine isEmailCorrect and isPasswordCorrect and name.isNotEmpty()
         }
 }
